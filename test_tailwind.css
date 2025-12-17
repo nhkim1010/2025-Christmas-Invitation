@@ -1,0 +1,5 @@
+@tailwind utilities;
+
+.test-class {
+  @apply bg-background;
+}
