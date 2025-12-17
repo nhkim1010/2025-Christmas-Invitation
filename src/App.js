@@ -32,11 +32,11 @@ export default function App() {
       <Snowfall/>
       <SparkleEffect/>
 
-       <div
+      <div
         className={`min-h-screen ${
           !isEntered
             ? "flex items-center justify-center"
-            : "flex justify-center"
+            : "flex items-start justify-center"
         } p-8`}
       >
         {!isEntered ? (
@@ -74,7 +74,7 @@ export default function App() {
           </div>
         ) : (
           /* Main Invitation Card */
-          <div className="w-full">
+          <div className="w-full max-w-md">
             <div className="bg-[#fffdf7] backdrop-blur-sm rounded-3xl shadow-2xl p-12 relative">
               <DecorativeBorder />
 
