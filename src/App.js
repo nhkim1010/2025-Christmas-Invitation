@@ -7,6 +7,7 @@ export default function App() {
   const [dDay, setDDay] = useState(0);
   const [guestName, setGuestName] = useState("");
   const [isEntered, setIsEntered] = useState(false);
+  const isKakao = /KAKAOTALK/i.test(navigator.userAgent);
 
   useEffect(() => {
     const targetDate = new Date("2025-12-25");
@@ -29,9 +30,8 @@ export default function App() {
 
   return (
     <div className="min-h-dvh bg-[#1f2937] relative">
-      <Snowfall/>
-      <SparkleEffect/>
-
+      {!isKakao && <Snowfall />}
+      {!isKakao && <SparkleEffect />}
       <div
         className={`min-h-dvh ${
           !isEntered
