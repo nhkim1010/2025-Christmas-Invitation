@@ -28,12 +28,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#1f2937] relative">
+    <div className="min-h-dvh bg-[#1f2937] relative">
       <Snowfall/>
       <SparkleEffect/>
 
       <div
-        className={`min-h-screen ${
+        className={`min-h-dvh ${
           !isEntered
             ? "flex items-center justify-center"
             : "flex items-start justify-center"
@@ -42,7 +42,7 @@ export default function App() {
         {!isEntered ? (
           /* Entry */
           <div className="w-full flex items-center justify-center">
-            <div className="bg-[#fffdf7] backdrop-blur-sm rounded-3xl shadow-2xl p-8 w-full max-w-sm text-center relative z-50">
+            <div className="bg-[#fffdf7] rounded-3xl shadow-2xl p-8 w-full max-w-sm text-center relative z-50">
               <h2
                   className="text-[#4a3b32] mb-6"
                   style={{
