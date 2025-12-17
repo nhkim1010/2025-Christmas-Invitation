@@ -2,7 +2,7 @@
   "name": "christmas-invitation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nhkim1010.github.io/2025-Christmas-Invitation/",
+  "homepage": "https://nhkim1010.github.io/2025-Christmas-Invitation",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
