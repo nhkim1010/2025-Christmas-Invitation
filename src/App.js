@@ -140,7 +140,7 @@ export default function App() {
                       letterSpacing: "0.05em",
                     }}
                   >
-                    CHRISTMAS PARTY
+                    CHRISTMAS
                   </h2>
                 </div>
 
