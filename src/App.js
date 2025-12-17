@@ -74,7 +74,7 @@ export default function App() {
           </div>
         ) : (
           /* Main Invitation Card */
-          <div className="w-full animate-[fadeIn_1s_ease-out]">
+          <div className="w-full">
             <div className="bg-[#fffdf7] backdrop-blur-sm rounded-3xl shadow-2xl p-12 relative">
               <DecorativeBorder />
 
