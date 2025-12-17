@@ -28,21 +28,19 @@ export default function App() {
   };
 
   return (
-    <div
-      className="min-h-screen relative overflow-y-scroll flex justify-center p-8"
-      style={{
-        background: "#1f2937",
-      }}
-    >
+    <div className="min-h-screen bg-[#1f2937] relative">
       <Snowfall/>
       <SparkleEffect/>
 
-      <div
-        className="max-w-md w-full relative z-20 cursor-pointer"
-        style={{ perspective: "1500px" }}
+       <div
+        className={`min-h-screen ${
+          !isEntered
+            ? "flex items-center justify-center"
+            : "flex justify-center"
+        } p-8`}
       >
         {!isEntered ? (
-          /* Entry Screen */
+          /* Entry */
           <div className="w-full flex items-center justify-center">
             <div className="bg-[#fffdf7] backdrop-blur-sm rounded-3xl shadow-2xl p-8 w-full max-w-sm text-center relative z-50">
               <h2
@@ -76,7 +74,7 @@ export default function App() {
           </div>
         ) : (
           /* Main Invitation Card */
-          <div className="fixed w-full animate-[fadeIn_1s_ease-out]">
+          <div className="w-full animate-[fadeIn_1s_ease-out]">
             <div className="bg-[#fffdf7] backdrop-blur-sm rounded-3xl shadow-2xl p-12 relative">
               <DecorativeBorder />
 
